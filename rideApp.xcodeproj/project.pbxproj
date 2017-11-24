@@ -15,6 +15,7 @@
 		7D8E711C1FC86D0C002B8F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D8E711A1FC86D0C002B8F74 /* LaunchScreen.storyboard */; };
 		7D8E71271FC86D0C002B8F74 /* rideAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8E71261FC86D0C002B8F74 /* rideAppTests.swift */; };
 		7D8E71321FC86D0C002B8F74 /* rideAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8E71311FC86D0C002B8F74 /* rideAppUITests.swift */; };
+		7D8E71411FC8726B002B8F74 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8E71401FC8726B002B8F74 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7D8E712D1FC86D0C002B8F74 /* rideAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rideAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8E71311FC86D0C002B8F74 /* rideAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rideAppUITests.swift; sourceTree = "<group>"; };
 		7D8E71331FC86D0C002B8F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D8E71401FC8726B002B8F74 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D8E71411FC8726B002B8F74 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				7D8E71251FC86D0C002B8F74 /* rideAppTests */,
 				7D8E71301FC86D0C002B8F74 /* rideAppUITests */,
 				7D8E710C1FC86D0C002B8F74 /* Products */,
+				7D8E713F1FC8726B002B8F74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				7D8E71331FC86D0C002B8F74 /* Info.plist */,
 			);
 			path = rideAppUITests;
+			sourceTree = "<group>";
+		};
+		7D8E713F1FC8726B002B8F74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D8E71401FC8726B002B8F74 /* Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
