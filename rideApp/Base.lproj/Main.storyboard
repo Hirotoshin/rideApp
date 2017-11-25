@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,19 +40,24 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="yLv-hG-fVh">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="94u-qk-Kqv"/>
+                                        <rightBarButtonItems>
+                                            <barButtonItem style="plain" systemItem="add" id="94u-qk-Kqv">
+                                                <connections>
+                                                    <action selector="addd:" destination="BYZ-38-t0r" id="yJC-Cg-aIj"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem systemItem="search" id="Zgd-XP-a1H"/>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <connections>
-                        <outlet property="addcom" destination="94u-qk-Kqv" id="cEE-jA-lIL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="54.422788605697157"/>
         </scene>
     </scenes>
 </document>

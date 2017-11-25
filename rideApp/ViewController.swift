@@ -13,15 +13,21 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var addcom: UIBarButtonItem!
+    @IBAction func addd(_ sender: Any) {
+        let twitterPostView:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
+        
+        self.present(twitterPostView, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        /* let button = UIButton(frame:CGRect(x:0,y:0,width:200,height:30))
         button.center=view.center
         button.setTitle("tweet", for: .normal)
-        button.layer.backgroundColor=UIColor.red.cgColor*/
-        addcom.addTarget(self, action: #selector(ViewController.tweet), for: .touchUpInside)
-        view.addSubview(addcom)
+        button.layer.backgroundColor=UIColor.red.cgColor
+        button.addTarget(self, action: #selector(ViewController.tweet), for: .touchUpInside)
+        view.addSubview(button)*/
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +35,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func tweet() {
+   /* func tweet() {
         
         // ツイート処理が可能かチェック
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
@@ -61,7 +67,7 @@ class ViewController: UIViewController {
         } else {
             print("can not tweet")
         }
-    }
+    }*/
 }
 
 
