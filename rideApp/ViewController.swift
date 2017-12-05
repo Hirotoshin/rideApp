@@ -17,6 +17,10 @@ class ViewController: UIViewController {
         let twitterPostView:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
         
         self.present(twitterPostView, animated: true, completion: nil)
+        
+        let drawline = ukei(frame:view.bounds)
+        drawline.backgroundColor = UIColor.white
+        view.addSubview(drawline)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,40 +39,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   /* func tweet() {
-        
-        // ツイート処理が可能かチェック
-        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
-            // make controller to share on twitter
-            let slc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            
-            slc?.setInitialText("ツイートしちゃうよ！")
-            slc?.add(UIImage(named:"leako.png"))
-            
-            // ツイート入力画面表示
-            present(slc!, animated: true, completion: {
-            })
-            
-            // 事後処理
-            slc?.completionHandler = {
-                (result:SLComposeViewControllerResult) -> () in
-                switch (result) {
-                    
-                // 投稿した
-                case SLComposeViewControllerResult.done:
-                    print("tweeted")
-                    
-                // キャンセルした
-                case SLComposeViewControllerResult.cancelled:
-                    print("tweet cancel")
-                    
-                }
-            }
-        } else {
-            print("can not tweet")
-        }
-    }*/
-}
+   }
 
+class ukei: UIView {
+    
+    /*
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     */
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x:100,y:100))
+        path.addLine(to: CGPoint(x:200,y:100))
+        path.lineWidth = 5  //線の太さ
+        UIColor.black.setStroke()   //色
+        path.stroke()
+    }
+    
+    
+}
 
 

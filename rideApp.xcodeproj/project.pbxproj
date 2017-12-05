@@ -16,6 +16,7 @@
 		7D8E71271FC86D0C002B8F74 /* rideAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8E71261FC86D0C002B8F74 /* rideAppTests.swift */; };
 		7D8E71321FC86D0C002B8F74 /* rideAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8E71311FC86D0C002B8F74 /* rideAppUITests.swift */; };
 		7D8E71411FC8726B002B8F74 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8E71401FC8726B002B8F74 /* Social.framework */; };
+		7DAD4ECF1FD6EC600057FA80 /* zukei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAD4ECE1FD6EC600057FA80 /* zukei.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7D8E71311FC86D0C002B8F74 /* rideAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rideAppUITests.swift; sourceTree = "<group>"; };
 		7D8E71331FC86D0C002B8F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D8E71401FC8726B002B8F74 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7DAD4ECE1FD6EC600057FA80 /* zukei.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zukei.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				7D8E710E1FC86D0C002B8F74 /* AppDelegate.swift */,
 				7D8E71101FC86D0C002B8F74 /* ViewController.swift */,
+				7DAD4ECE1FD6EC600057FA80 /* zukei.swift */,
 				7D8E71121FC86D0C002B8F74 /* Main.storyboard */,
 				7D8E71181FC86D0C002B8F74 /* Assets.xcassets */,
 				7D8E711A1FC86D0C002B8F74 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 			files = (
 				7D8E71111FC86D0C002B8F74 /* ViewController.swift in Sources */,
 				7D8E710F1FC86D0C002B8F74 /* AppDelegate.swift in Sources */,
+				7DAD4ECF1FD6EC600057FA80 /* zukei.swift in Sources */,
 				7D8E71171FC86D0C002B8F74 /* rideApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +523,7 @@
 				7D8E71381FC86D0C002B8F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D8E71391FC86D0C002B8F74 /* Build configuration list for PBXNativeTarget "rideAppTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				7D8E713B1FC86D0C002B8F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D8E713C1FC86D0C002B8F74 /* Build configuration list for PBXNativeTarget "rideAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				7D8E713E1FC86D0C002B8F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
